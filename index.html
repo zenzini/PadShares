@@ -74,6 +74,32 @@
             flex-direction: column;
             gap: 0.5em;
         }
+
+        .hiw__number__outer {
+            padding: 0.375em;
+            border-radius: 0.375em;
+            border: 1px solid black
+        }
+
+        .hiw__number__inner {
+            color: white;
+            width: 2.75em;
+            height: 2.75em;
+            background: black;
+            border-radius: 0.375em
+        }
+
+        .hiw__samples {
+            display: flex;
+            flex-grow: 1;
+            justify-content: end;
+        }
+
+        .hiw__samples img{
+            object-fit: contain;
+            height: 100%;
+            width: auto;
+        }
     </style>
 </head>
 
@@ -119,107 +145,107 @@
 
     <div class="container-fluid align-items-center" style="background: #F5F6F6; padding-top: 8em">
         <div class="d-flex container-fluid justify-content-center">
-            <h1>How It Works</h1>
+            <h1 style="margin-bottom: 0.75em">How It Works</h1>
         </div>
 
-        <div class="d-flex flex-column gap-5" style="padding: 2em 0 8em 6.375em">
-            <div class="d-flex gap-4 align-items-center">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 0.375em; border-radius: 0.375em; border: 1px solid black">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="color: white; width: 2.75em; height: 2.75em; background: black; border-radius: 0.375em">
-                        <h3>1</h3>
+        <div class="d-flex container-fluid justify-content-between" style="padding: 2em 0 8em 6.375em">
+            <div class="d-flex flex-column gap-5">
+                <div class="d-flex gap-4 align-items-center">
+                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                            <h3>1</h3>
+                        </div>
+                    </div>
+
+                    <h4>Sign up and download the app</h4>
+                </div>
+
+                <div class="d-flex gap-4 align-items-center col">
+                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                            <h3>2</h3>
+                        </div>
+                    </div>
+
+                    <div class="hiw__list">
+                        <h4>Browse</h4>
+                        Browse properties and choose which property you want to buy fractional deeds of.
                     </div>
                 </div>
-                <h4>Sign up and download the app</h4>
+
+                <div class="d-flex gap-4 align-items-center">
+                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                            <h3>3</h3>
+                        </div>
+                    </div>
+
+                    <div class="hiw__list">
+                        <h4>Buy shares</h4>
+                        Buy as few or as many shares as you feel comfortable with.
+                    </div>
+                </div>
+
+                <div class="d-flex gap-4 align-items-center">
+                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                            <div></div>
+                            <h3>4</h3>
+                        </div>
+                    </div>
+
+                    <div class="hiw__list">
+                        <h4>Vote</h4>
+                        Each fractional deed carries one vote. The more deeds you own, the more votes you can
+                        cast. Voting is required at least quarterly in order to receive returns.
+                    </div>
+                </div>
+
+                <div class="d-flex gap-4 align-items-center">
+                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                            <h3>5</h3>
+                        </div>
+                    </div>
+
+                    <div class="hiw__list">
+                        <h4>Collect</h4>
+                        Quarterly earnings are deposit right into you account.
+                    </div>
+                </div>
+
+                <div class="d-flex gap-4 align-items-center">
+                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                            <h3>6</h3>
+                        </div>
+                    </div>
+
+                    <div class="hiw__list">
+                        <h4>Grow your portfolio</h4>
+                        Continue to build your real estate portfolio buy buying as few or as many shares across a
+                        diversified number of properties.
+                    </div>
+                </div>
+
+                <div class="d-flex gap-4 align-items-center">
+                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                            <h3>7</h3>
+                        </div>
+                    </div>
+
+                    <div class="hiw__list">
+                        <h4>Resell</h4>
+                        Sell your deeds on your terms when you are ready using our secondary marketplace. Or you can
+                        sell to
+                        a friend, family member or associate and then conduct the sale through our secure app
+                    </div>
+                </div>
             </div>
 
-            <div class="d-flex gap-4 align-items-center">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 0.375em; border-radius: 0.375em; border: 1px solid black">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="color: white; width: 2.75em; height: 2.75em; background: black; border-radius: 0.375em">
-                        <h3>2</h3>
-                    </div>
-                </div>
-                <div class="hiw__list">
-                    <h4>Browse</h4>
-                    Browse properties and choose which property you want to buy fractional deeds of.
-                </div>
-            </div>
-
-            <div class="d-flex gap-4 align-items-center">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 0.375em; border-radius: 0.375em; border: 1px solid black">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="color: white; width: 2.75em; height: 2.75em; background: black; border-radius: 0.375em">
-                        <h3>3</h3>
-                    </div>
-                </div>
-                <div class="hiw__list">
-                    <h4>Buy shares</h4>
-                    Buy as few or as many shares as you feel comfortable with.
-                </div>
-            </div>
-
-            <div class="d-flex gap-4 align-items-center">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 0.375em; border-radius: 0.375em; border: 1px solid black">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="color: white; width: 2.75em; height: 2.75em; background: black; border-radius: 0.375em">
-                        <div></div>
-                        <h3>4</h3>
-                    </div>
-                </div>
-                <div class="hiw__list">
-                    <h4>Vote</h4>
-                    Each fractional deed carries one vote. The more deeds you own, the more votes you can
-                    cast. Voting is required at least quarterly in order to receive returns.
-                </div>
-            </div>
-
-            <div class="d-flex gap-4 align-items-center">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 0.375em; border-radius: 0.375em; border: 1px solid black">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="color: white; width: 2.75em; height: 2.75em; background: black; border-radius: 0.375em">
-                        <h3>5</h3>
-                    </div>
-                </div>
-                <div class="hiw__list">
-                    <h4>Collect</h4>
-                    Quarterly earnings are deposit right into you account.
-                </div>
-            </div>
-
-            <div class="d-flex gap-4 align-items-center">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 0.375em; border-radius: 0.375em; border: 1px solid black">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="color: white; width: 2.75em; height: 2.75em; background: black; border-radius: 0.375em">
-                        <h3>6</h3>
-                    </div>
-                </div>
-                <div class="hiw__list">
-                    <h4>Grow your portfolio</h4>
-                    Continue to build your real estate portfolio buy buying as few or as many shares across a
-                    diversified number of properties.
-                </div>
-            </div>
-
-            <div class="d-flex gap-4 align-items-center">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 0.375em; border-radius: 0.375em; border: 1px solid black">
-                    <div class="d-flex justify-content-center align-items-center"
-                        style="color: white; width: 2.75em; height: 2.75em; background: black; border-radius: 0.375em">
-                        <h3>7</h3>
-                    </div>
-                </div>
-                <div class="hiw__list">
-                    <h4>Resell</h4>
-                    Sell your deeds on your terms when you are ready using our secondary marketplace. Or you can sell to
-                    a friend, family member or associate and then conduct the sale through our secure app
-                </div>
+            <div class="hiw__samples">
+                <img src="images/samples.svg" alt="Samples of the Service">
             </div>
         </div>
     </div>
