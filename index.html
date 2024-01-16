@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
 
     <title>PadShares</title>
@@ -26,18 +26,22 @@
         }
 
         h2 {
-            font-weight: 700;
-            font-size: 2em;
+            font-weight: 600;
+            font-size: 3em;
         }
 
         h3 {
             font-weight: 700;
-            color: white;
+            font-size: 2em;
+        }
+
+        h5 {
+            font-weight: 700;
             font-size: 1.375em;
             margin: 0;
         }
 
-        h4 {
+        h5 {
             font-size: 1.25em;
             font-weight: 500;
             margin: 0;
@@ -54,7 +58,7 @@
             color: white;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
-            padding: 0.75em 2em;
+            padding: 0.65em 1.55em;
             border-radius: 4px;
             white-space: nowrap;
 
@@ -69,7 +73,7 @@
         }
 
         .hiw__list {
-            width: 30.75em;
+            width: 30em;
             display: flex;
             flex-direction: column;
             gap: 0.5em;
@@ -91,11 +95,14 @@
 
         .hiw__samples {
             display: flex;
+            padding: 2em 0;
             flex-grow: 1;
             justify-content: end;
         }
 
-        .hiw__samples img{
+        .hiw__samples img {
+            border-radius: 6px;
+            ;
             object-fit: contain;
             height: 100%;
             width: auto;
@@ -104,16 +111,22 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row align-items-center" style="padding: 1.5em 6.375em; background: white">
+    <div class="container py-3">
+        <div class="d-flex align-items-center" style="background: white">
             <div class="col">
-                <h2>PadShares</h2>
+                <h3>PadShares</h3>
             </div>
-            <div class="col d-flex justify-content-center">
-                <div class="d-flex gap-5">
+            <div class="d-flex flex-grow-1 gap-5 justify-content-center">
+                <div>
                     <p>How It Works</p>
+                </div>
+                <div>
                     <p>Invest</p>
+                </div>
+                <div>
                     <p>Portfolio</p>
+                </div>
+                <div>
                     <p>Learn More</p>
                 </div>
             </div>
@@ -127,8 +140,7 @@
         </div>
     </div>
 
-    <div class="d-flex container-fluid justify-content-between align-items-center gap-4"
-        style="padding: 8em 0 8em 6.375em">
+    <div class="d-flex container align-items-center gap-4" style="padding: 6em 0;">
         <div class="d-flex flex-column gap-5" style="width: 30em">
             <h1>Invest in Real Estate Like Buying Stocks</h1>
             Traditional real estate investing can be hard. With PadShares, you get the benefits of cash flow,
@@ -140,112 +152,275 @@
             </div>
         </div>
 
-        <img class="flex-grow-1" src="images/house.svg" alt="House and Clouds" />
+        <img class="flex-grow-1" src="images/house1.svg" alt="House and Clouds" />
     </div>
 
-    <div class="container-fluid align-items-center" style="background: #F5F6F6; padding-top: 8em">
-        <div class="d-flex container-fluid justify-content-center">
-            <h1 style="margin-bottom: 0.75em">How It Works</h1>
+    <div class="container-fluid" style="background: #F5F6F6">
+        <div class="container align-items-center" style="padding: 6em 0">
+            <div class="d-flex container-fluid justify-content-center">
+                <h1 style="margin-bottom: 0.75em">How It Works</h1>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div class="d-flex flex-column gap-5">
+                    <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                            <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+
+                        <h5>Sign up and download the app</h5>
+                    </div>
+
+                    <div class="d-flex gap-4 align-items-center col">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                            <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                                <h4>2</h4>
+                            </div>
+                        </div>
+
+                        <div class="hiw__list">
+                            <h5>Browse</h5>
+                            Browse properties and choose which property you want to buy fractional deeds of.
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                            <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                                <h4>3</h4>
+                            </div>
+                        </div>
+
+                        <div class="hiw__list">
+                            <h5>Buy shares</h5>
+                            Buy as few or as many shares as you feel comfortable with.
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                            <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                                <div></div>
+                                <h4>4</h4>
+                            </div>
+                        </div>
+
+                        <div class="hiw__list">
+                            <h5>Vote</h5>
+                            Each fractional deed carries one vote. The more deeds you own, the more votes you can
+                            cast. Voting is required at least quarterly in order to receive returns.
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                            <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                                <h4>5</h4>
+                            </div>
+                        </div>
+
+                        <div class="hiw__list">
+                            <h5>Collect</h5>
+                            Quarterly earnings are deposit right into you account.
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                            <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                                <h4>6</h4>
+                            </div>
+                        </div>
+
+                        <div class="hiw__list">
+                            <h5>Grow your portfolio</h5>
+                            Continue to build your real estate portfolio buy buying as few or as many shares across a
+                            diversified number of properties.
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex justify-content-center align-items-center hiw__number__outer">
+                            <div class="d-flex justify-content-center align-items-center hiw__number__inner">
+                                <h4>7</h4>
+                            </div>
+                        </div>
+
+                        <div class="hiw__list">
+                            <h5>Resell</h5>
+                            Sell your deeds on your terms when you are ready using our secondary marketplace. Or you can
+                            sell to
+                            a friend, family member or associate and then conduct the sale through our secure app
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hiw__samples">
+                    <img src="images/samples.jpg" alt="Samples of the Service">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex container align-items-center gap-4" style="padding: 8em 0">
+
+        <img src="images/house2.svg" alt="Real Estate">
+
+        <div class="d-flex flex-column gap-4">
+            <h2 class="flex-grow-1">What is Fractional Real Estate?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Sed et in consequat ante vitae nisl eget. Posuere condimentum
+                sollicitudin elit egestas eget. Blandit enim in libero vel pulvinar. Augue consequat urna enim vulputate
+                convallis purus sapien feugiat. Arcu et pulvinar id tellus maecenas velit purus odio sagittis.
+
+                <br><br>
+
+                Est malesuada metus ac nunc aliquam ipsum lobortis vitae ac. Fames consequat amet sem placerat
+                sed sodales. Aliquam nec amet ornare at nullam est dui tincidunt. Luctus mattis feugiat a.
+            </p>
+
+            <button type="button" class="btn">Get Started</button>
+        </div>
+    </div>
+
+
+    <div class="d-flex flex-column container justify-content-center align-items-center gap-4" style="padding: 8em 0">
+        <h2>Why Real Estate?</h2>
+
+        <div class="text-center" style="width: 50em">
+            <p>Investors like yourself can enjoy the benefits real estate has to offer such as cash flow, appreciation,
+                excellent returns, long term stability and diversification.</p>
         </div>
 
-        <div class="d-flex container-fluid justify-content-between" style="padding: 2em 0 8em 6.375em">
-            <div class="d-flex flex-column gap-5">
-                <div class="d-flex gap-4 align-items-center">
-                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
-                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
-                            <h3>1</h3>
-                        </div>
-                    </div>
-
-                    <h4>Sign up and download the app</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col">
                 </div>
-
-                <div class="d-flex gap-4 align-items-center col">
-                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
-                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
-                            <h3>2</h3>
-                        </div>
-                    </div>
-
-                    <div class="hiw__list">
-                        <h4>Browse</h4>
-                        Browse properties and choose which property you want to buy fractional deeds of.
-                    </div>
+                <div class="col text-center">
+                    <img src="images/table1/real_estate.svg" alt="Real Estate">
+                    <p>Real Estate</p>
                 </div>
-
-                <div class="d-flex gap-4 align-items-center">
-                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
-                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
-                            <h3>3</h3>
-                        </div>
-                    </div>
-
-                    <div class="hiw__list">
-                        <h4>Buy shares</h4>
-                        Buy as few or as many shares as you feel comfortable with.
-                    </div>
+                <div class="col text-center">
+                    <img src="images/table1/stocks.svg" alt="Stocks">
+                    <p>Stocks</p>
                 </div>
-
-                <div class="d-flex gap-4 align-items-center">
-                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
-                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
-                            <div></div>
-                            <h3>4</h3>
-                        </div>
-                    </div>
-
-                    <div class="hiw__list">
-                        <h4>Vote</h4>
-                        Each fractional deed carries one vote. The more deeds you own, the more votes you can
-                        cast. Voting is required at least quarterly in order to receive returns.
-                    </div>
+                <div class="col text-center">
+                    <img src="images/table1/bonds.svg" alt="Bonds">
+                    <p>Bonds</p>
                 </div>
-
-                <div class="d-flex gap-4 align-items-center">
-                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
-                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
-                            <h3>5</h3>
-                        </div>
-                    </div>
-
-                    <div class="hiw__list">
-                        <h4>Collect</h4>
-                        Quarterly earnings are deposit right into you account.
-                    </div>
-                </div>
-
-                <div class="d-flex gap-4 align-items-center">
-                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
-                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
-                            <h3>6</h3>
-                        </div>
-                    </div>
-
-                    <div class="hiw__list">
-                        <h4>Grow your portfolio</h4>
-                        Continue to build your real estate portfolio buy buying as few or as many shares across a
-                        diversified number of properties.
-                    </div>
-                </div>
-
-                <div class="d-flex gap-4 align-items-center">
-                    <div class="d-flex justify-content-center align-items-center hiw__number__outer">
-                        <div class="d-flex justify-content-center align-items-center hiw__number__inner">
-                            <h3>7</h3>
-                        </div>
-                    </div>
-
-                    <div class="hiw__list">
-                        <h4>Resell</h4>
-                        Sell your deeds on your terms when you are ready using our secondary marketplace. Or you can
-                        sell to
-                        a friend, family member or associate and then conduct the sale through our secure app
-                    </div>
+                <div class="col text-center">
+                    <img src="images/table1/gold.svg" alt="Gold">
+                    <p>Gold</p>
                 </div>
             </div>
 
-            <div class="hiw__samples">
-                <img src="images/samples.svg" alt="Samples of the Service">
+            <div class="row" style="background: #F5F6F6; border-radius: 0.75em;">
+                <div class="col">
+                    <p>Attractive Dividends</p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    
+                </div>
+                <div class="col">
+                    
+                </div>
+                <div class="col">
+                   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>Low Volatility</p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>Access to Leverage</p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>Hard Asset</p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>Inflation Hedge</p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>Average Annual Return</p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
             </div>
         </div>
     </div>
