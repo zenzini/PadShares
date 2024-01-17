@@ -1,6 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: black;
+    margin: 0;
 }
 
 h1 {
@@ -18,10 +19,10 @@ h3 {
     font-size: 2rem;
 }
 
-h5 {
-    font-weight: 700;
+h4 {
+    font-weight: 600;
     font-size: 1.375rem;
-    margin: 0;
+    margin-bottom: 0 !important;
 }
 
 h5 {
@@ -41,7 +42,7 @@ p {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    padding: 0.65em 1.55em;
+    padding: 0.65em 1.85em;
     border-radius: 4px;
     white-space: nowrap;
 
@@ -109,19 +110,19 @@ p {
 }
 
 .p-img-invert {
-    padding: 6em 8.275rem 6em  0 ;
+    padding: 0 8.275rem 0  0 ;
     
 
     @media only screen and (max-width: 1400px){
-        padding: 6em 4.275rem 6em 0;
+        padding: 0 4.275rem 0 0;
     }
 
     @media only screen and (max-width: 992px){
-        padding: 6em 2.5rem 6em 0;
+        padding: 0 2.5rem 0 0;
     }
 
     @media only screen and (max-width: 768px){
-        padding: 6em 2.5rem;
+        padding: 0 2.5rem;
     }
 }
 
