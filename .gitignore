@@ -2,5 +2,5 @@ node_modules
 work_key
 work_key.pub
 
-package-lock
-package
+package-lock.json
+package.json
