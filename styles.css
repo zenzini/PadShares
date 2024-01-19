@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -58,10 +58,10 @@ p {
 .wht {
     background: white;
     color: black;
-    border: solid 1px black;
+    border: solid 1px #9D9D9D;
 
     &:hover {
-        border: solid 1px black;
+        border: solid 1px #9D9D9D;
         color: black;
         background: #d1d1d1;
     }
@@ -203,6 +203,15 @@ p {
     @media only screen and (max-width: 768px){
         padding: 0.7em 2.5rem;
     }
+}
+
+.sbab {
+    background-color: #F1F1F1;
+    border-radius: 0.75em;
+    border: 1px solid #B2B2B2;
+    padding: 5em 4em;
+    display: flex;
+    flex-grow: 1;
 }
 
 .w-text-sm {
