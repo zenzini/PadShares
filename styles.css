@@ -38,17 +38,53 @@ p {
 }
 
 .btn {
-    background: #A7CA37;
-    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     padding: 0.65em 1.85em;
     border-radius: 4px;
     white-space: nowrap;
+}
+
+.grn {
+    background: #A7CA37;
+    color: white;
 
     &:hover {
         color: white;
         background: #7fa013;
+    }
+}
+
+.wht {
+    background: white;
+    color: black;
+    border: solid 1px black;
+
+    &:hover {
+        border: solid 1px black;
+        color: black;
+        background: #d1d1d1;
+    }
+}
+
+.ico {
+    padding: 0 !important;
+    border: none !important;
+    &::before {
+        content: url(images/icons/plus.png);
+        }
+
+
+    &.collapsed {
+        &::before {
+        content: url(images/icons/plus.png);
+        }
+    }
+
+    &.exp {
+        &::before {
+            content: url(images/icons/minus.png);
+        }
     }
 }
 
@@ -104,6 +140,18 @@ p {
 
     @media only screen and (max-width: 992px){
         padding: 0 2.5rem;
+    }
+}
+
+.p-clpse {
+    width: 60em;
+    
+    @media only screen and (max-width: 1400px){
+        width: 54em;
+    }
+
+    @media only screen and (max-width: 992px){
+        width: 50em;
     }
 }
 
