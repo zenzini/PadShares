@@ -37,6 +37,11 @@ p {
     margin: 0;
 }
 
+hr {
+    margin: 0 !important;
+}
+
+
 .btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -70,14 +75,15 @@ p {
 .ico {
     padding: 0 !important;
     border: none !important;
+
     &::before {
         content: url(images/icons/plus.png);
-        }
+    }
 
 
     &.collapsed {
         &::before {
-        content: url(images/icons/plus.png);
+            content: url(images/icons/plus.png);
         }
     }
 
@@ -90,6 +96,10 @@ p {
 
 .col {
     padding: 0 !important;
+}
+
+.nav-divider{
+    border-color: black;
 }
 
 .form-control {
@@ -124,49 +134,78 @@ p {
     justify-content: end;
 
     img {
-        border-radius: 6px;;
+        border-radius: 6px;
+        ;
         object-fit: contain;
         height: 100%;
         width: auto;
     }
 }
 
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0.3em 0 !important;
+}
+
+.navbar-wrap {
+    justify-content: center;
+
+
+    @media only screen and (max-width: 992px) {
+        justify-content: flex-start;
+    }
+
+    .inner {
+        flex-grow: 1;
+        gap: 2.5rem;
+        padding: 0 1.5rem;
+        justify-content: center;
+
+        @media only screen and (max-width: 992px) {
+            justify-content: flex-start;
+            gap: 0.6rem;
+        }
+    }
+
+}
+
 .p-reg {
     padding: 0 8.275rem;
-    
-    @media only screen and (max-width: 1400px){
+
+    @media only screen and (max-width: 1400px) {
         padding: 0 4.275rem;
     }
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         padding: 0 2.5rem;
     }
 }
 
 .p-clpse {
     width: 60em;
-    
-    @media only screen and (max-width: 1400px){
+
+    @media only screen and (max-width: 1400px) {
         width: 54em;
     }
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         width: 50em;
     }
 }
 
 .p-img {
     padding-left: 8.275rem;
-    
-    @media only screen and (max-width: 1400px){
+
+    @media only screen and (max-width: 1400px) {
         padding-left: 4.275rem;
     }
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         padding-left: 2.5rem;
     }
 
-    @media only screen and (max-width: 576px){
+    @media only screen and (max-width: 576px) {
         padding: 0 2.5rem;
     }
 }
@@ -174,33 +213,33 @@ p {
 .p-img-invert {
     padding-right: 8.275rem;
     justify-content: end;
-    
-    @media only screen and (max-width: 1400px){
+
+    @media only screen and (max-width: 1400px) {
         padding-right: 4.275rem;
     }
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         padding-right: 2.5rem;
     }
 
-    @media only screen and (max-width: 576px){
+    @media only screen and (max-width: 576px) {
         padding: 0 2.5rem;
     }
 }
 
 .p-header {
     padding: 1.4em 8.275rem;
-    
 
-    @media only screen and (max-width: 1400px){
+
+    @media only screen and (max-width: 1400px) {
         padding: 1.4em 4.275rem;
     }
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         padding: 1.2em 2.5rem;
     }
 
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
         padding: 0.7em 2.5rem;
     }
 }
@@ -218,15 +257,15 @@ p {
     flex-shrink: 0;
     width: 30em;
 
-    @media only screen and (max-width: 1400px){
+    @media only screen and (max-width: 1400px) {
         width: 24rem;
     }
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         width: 20rem;
     }
 
-    @media only screen and (max-width: 576px){
+    @media only screen and (max-width: 576px) {
         width: 100%;
     }
 }
@@ -235,16 +274,19 @@ p {
     flex-shrink: 0;
     width: 38em;
 
-    @media only screen and (max-width: 1400px){
-        width: 32rem;
-    }
-
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 1400px) {
         width: 28rem;
     }
 
-    @media only screen and (max-width: 576px){
+    @media only screen and (max-width: 1200px) {
+        width: 22rem;
+    }
+
+    @media only screen and (max-width: 992px) {
+        width: 18rem;
+    }
+
+    @media only screen and (max-width: 576px) {
         width: 100%;
     }
 }
-

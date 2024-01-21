@@ -19,34 +19,84 @@
 </head>
 
 <body>
-    <div class="container-fluid p-header">
-        <div class="d-flex align-items-center" style="background: white">
-            <div class="col">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-header d-flex align-items-center" style="background: white">
+            <a class="col navbar-brand" href="#">
                 <h3>PadShares</h3>
-            </div>
-            <div class="d-flex flex-grow-1 gap-5 justify-content-center">
-                <div>
-                    <p>How It Works</p>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header px-4">
+                    <h4 class="offcanvas-title" id="navbarOffcanvasLgLabel">Menu</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>            
+                <div class="d-flex navbar-wrap col offcanvas-body">
+                    <ul class="navbar-nav inner d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                How It Works
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                Invest
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="d-flex nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Learn More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li><hr></li>
+                        <li class="nav-item d-block d-lg-none mt-2">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <p style="font-weight: 600">Login</p>
+                            </a>
+                        </li>
+                        <div>
+                            <button type="button" class="btn grn d-block d-lg-none">Get Started</button>
+                            </div>
+                    </ul>
                 </div>
-                <div>
-                    <p>Invest</p>
-                </div>
-                <div>
-                    <p>Portfolio</p>
-                </div>
-                <div>
-                    <p>Learn More</p>
-                </div>
+
             </div>
 
-            <div class="col">
-                <div class="d-flex gap-5 align-items-center justify-content-end">
-                    <p style="font-weight: 600">Login</p>
-                    <button type="button" class="btn grn">Get Started</button>
+            <div class="d-none d-lg-block col">
+                <div class="d-flex gap-5 align-items-center justify-content-end flex-grow-1">
+                    <ul class="navbar-nav d-flex gap-5 d-none d-lg-block">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <p style="font-weight: 600">Login</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn grn d-none d-lg-block">Get Started</button>
                 </div>
             </div>
         </div>
-    </div>
+
+    </nav>
+
 
     <div class="p-img py-5 d-flex container-fluid align-items-center gap-4">
         <div class="d-flex flex-column gap-5 w-text-sm">
@@ -362,7 +412,7 @@
         </div>
 
         <div class="d-flex flex-grow-1 justify-content-center ">
-            <img class="pt-5" src="images/showcase.svg" loading="lazy" alt="Real Estate Sample">
+            <img class="pt-5" src="images/showcase.png" loading="lazy" alt="Real Estate Sample">
         </div>
     </div>
 
@@ -461,7 +511,7 @@
                 <p>Be the first to know about the property launches, portfolio updates, and announcements by subscribing
                     to our newsletter.</p>
             </div>
-            
+
             <div class="d-flex flex-grow-1 align-self-center gap-2">
                 <input type="email" class="form-control p-3 flex-grow-1" id="inputEmail" aria-describedby="emailHelp"
                     placeholder="Enter Email">
