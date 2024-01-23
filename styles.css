@@ -1,7 +1,7 @@
 body {
-    font-family: 'Inter', sans-serif;
-    color: black;
     margin: 0;
+    color: black;
+    font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -15,29 +15,29 @@ h2 {
 }
 
 h3 {
+    margin: 0 !important;
     font-weight: 700;
     font-size: 2rem;
-    margin: 0 !important;
 }
 
 h4 {
+    margin: 0 !important;
     font-weight: 600;
     font-size: 1.375rem;
-    margin: 0 !important;
 }
 
 h5 {
-    font-size: 1.125rem;
-    font-weight: 600;
     margin: 0;
+    font-weight: 600;
+    font-size: 1.125rem;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    color: #212121;
     margin: 0;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
 
-    &.__footer{
+    &.__footer {
         color: #636262;
         font-size: 0.875em;
     }
@@ -49,10 +49,10 @@ hr {
 
 
 .btn {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    padding: 0.65em 1.85em;
     border-radius: 4px;
+    padding: 0.65em 1.85em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
     white-space: nowrap;
 }
 
@@ -61,8 +61,8 @@ hr {
     color: white;
 
     &:hover {
-        color: white;
         background: #7fa013;
+        color: white;
     }
 }
 
@@ -104,7 +104,7 @@ hr {
     padding: 0 !important;
 }
 
-.nav-divider{
+.nav-divider {
     border-color: black;
 }
 
@@ -113,44 +113,44 @@ hr {
 }
 
 .hiw__list {
-    width: 30em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    width: 30em;
 }
 
 .hiw__number__outer {
-    padding: 0.375em;
+    border: 1px solid black;
     border-radius: 0.375em;
-    border: 1px solid black
+    padding: 0.375em
 }
 
 .hiw__number__inner {
-    color: white;
-    width: 2.75em;
-    height: 2.75em;
     background: black;
     border-radius: 0.375em
+    color: white;
+    height: 2.75em;
+    width: 2.75em;
 }
 
 .hiw__samples {
     display: flex;
-    padding: 2em 0;
     flex-grow: 1;
     justify-content: end;
+    padding: 2em 0;
 
     img {
         border-radius: 6px;
-        object-fit: contain;
-        height: 100%;
         width: auto;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
 .nav-link {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0.3em 0 !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-wrap {
@@ -163,14 +163,14 @@ hr {
 
     .inner {
         flex-grow: 1;
+        justify-content: center;
         gap: 2.5rem;
         padding: 0 1.5rem 0 3rem;
-        justify-content: center;
 
         @media only screen and (max-width: 992px) {
             justify-content: flex-start;
-            padding: 0 2rem;
             gap: 0.6rem;
+            padding: 0 2rem;
         }
     }
 
@@ -251,12 +251,90 @@ hr {
 }
 
 .sbab {
-    background-color: #F1F1F1;
-    border-radius: 0.75em;
-    border: 1px solid #B2B2B2;
-    padding: 5em 4em;
     display: flex;
     flex-grow: 1;
+    border: 1px solid #B2B2B2;
+    border-radius: 0.75em;
+    background-color: #F1F1F1;
+    padding: 5em 4em;
+}
+
+.wre__card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2.5rem;
+    border-radius: 0.5em;
+    width: 270px;
+    height: 300px;
+    overflow: hidden;
+
+    p {
+        color: white !important;
+    }
+
+    .bar{
+        display: flex;
+        flex-grow: 1;
+        background-color: white; 
+        height: 6px; 
+        border-radius: 4px;
+
+        .percent {
+            display: flex;
+            background-color: #A7CA37; 
+            border-radius: inherit;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: auto;
+        overflow: hidden;
+        transition: 120ms;
+        transition-timing-function: ease-in-and-out;
+
+        &:hover {
+            transition-timing-function: ease-out;
+            transition: 225ms;
+            scale: 110%;
+        }
+
+        &::after {
+            content:'';
+            position:absolute;
+            left:0; top:0;
+            width:100%; height:100%;
+            display:inline-block;
+            background: linear-gradient(to bottom, transparent 0%, black 120%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+          }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .chip {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border-radius: 6px;
+        background-color: white;
+        padding: 0.33em 0.8em;
+        font-weight: 500;
+        font-size: 0.75em;
+
+        &::before {
+            content: "New";
+        }
+    }
 }
 
 .w-text-sm {
