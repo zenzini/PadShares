@@ -71,8 +71,8 @@ hr {
 
 .container-xxl {
     max-width: 1920px !important;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .grn {
@@ -426,10 +426,10 @@ hr {
             justify-content: space-evenly;
 
     @media only screen and (max-width: 576px){
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
         gap: 2rem;
     }
 
