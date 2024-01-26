@@ -547,7 +547,9 @@ hr {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 3rem;
-  border-radius: 0.5em;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   width: 270px;
   height: 300px;
   overflow: hidden;
@@ -579,24 +581,25 @@ hr {
   border-radius: inherit;
 }
 #portfolio .card .wrapper {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-transition: 120ms;
+  -o-transition: 120ms;
+  -webkit-transition-timing-function: ease-in-and-out;
+  -o-transition-timing-function: ease-in-and-out;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  height: 100%;
-  width: auto;
-  overflow: hidden;
-  -webkit-transition: 120ms;
-  -o-transition: 120ms;
   transition: 120ms;
-  -webkit-transition-timing-function: ease-in-and-out;
-  -o-transition-timing-function: ease-in-and-out;
   transition-timing-function: ease-in-and-out;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
 }
 #portfolio .card .wrapper:hover {
   -webkit-transition-timing-function: ease-out;
@@ -605,7 +608,7 @@ hr {
   -webkit-transition: 225ms;
   -o-transition: 225ms;
   transition: 225ms;
-  scale: 110%;
+  -webkit-transform: scale(1.1, 1.1);
 }
 #portfolio .card .wrapper::after {
   display: inline-block;
@@ -649,15 +652,15 @@ hr {
 }
 
 #sbab {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
     -ms-flex-positive: 1;
-    flex-grow: 1;
-    border: 1px solid #b2b2b2;
-    border-radius: 0.75em;
+    -webkit-box-flex: 1;
     background-color: #f1f1f1;
+    border-radius: 0.75em;
+    border: 1px solid #b2b2b2;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-grow: 1;
     padding: 5rem 4rem;
   }
   @media screen and (max-width: 576px) {
