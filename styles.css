@@ -40,6 +40,26 @@ h5 {
   font-size: 1.125rem;
 }
 
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2.475rem; /* 75% of 3.3rem */
+    }
+
+    h2 {
+        font-size: 1.875rem; /* 75% of 2.5rem */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* 75% of 2rem */
+    }
+
+    h4 {
+        font-size: 1.03125rem; /* 75% of 1.375rem */
+    }
+}
+
+
+
 p {
   margin: 0;
   color: #212121;
@@ -152,9 +172,12 @@ hr {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-right: 0.5em;
   width: 30em;
 }
+.hiw__list > *:not(:last-child) {
+    margin-bottom: 0.5rem; /* Adjust the margin value as needed */
+}
+
 @media screen and (max-width: 576px) {
   .hiw__list {
     width: 100%;
@@ -325,6 +348,15 @@ hr {
     flex-direction: column-reverse;
   }
 }
+@media screen and (max-width: 768px) {
+    .p-img.invert{
+      padding: 0 2.5rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
 
 .p-img-invert {
   padding-right: 8.275rem;
@@ -460,17 +492,22 @@ hr {
 #footer .link-col > *:not(:last-child) {
     margin-bottom: 1.5rem; /* Adjust the margin value as needed */
 }
+
 @media screen and (max-width: 576px) {
   #footer .link-col > *:not(:last-child) {
         margin-bottom: 0.5rem; /* Adjust the margin value as needed */
     }
 }
 @media screen and (max-width: 576px) {
-  #hero .email {
+  ._email {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  ._email > *:not(:last-child)  {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -670,9 +707,10 @@ hr {
   }
 }
 @media screen and (max-width: 576px) {
+    
   #why-re .header img {
-    scale: 0.7;
-    margin: 0 -0.3rem;
+    -webkit-transform: scale(0.7, 0.7);
+    margin: 0 -0.5rem -1rem -0.05rem;
     padding: 0 !important;
   }
 }
