@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,11 +11,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="dist/loading-attribute-polyfill.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
     <title>PadShares</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -84,9 +83,9 @@
             </div>
 
             <div class="d-none d-lg-block col">
-                <div class="d-flex gap-5 align-items-center justify-content-end flex-grow-1">
-                    <ul class="navbar-nav d-flex gap-5 d-none d-lg-block">
-                        <li class="nav-item">
+                <div class="d-flex align-items-center justify-content-end flex-grow-1">
+                    <ul class="navbar-nav d-flex _gap-5 d-none d-lg-block">
+                        <li class="nav-item _gap">
                             <a class="nav-link" aria-current="page" href="#">
                                 <p style="font-weight: 600">Login</p>
                             </a>
@@ -101,12 +100,15 @@
     </nav>
 
 
-    <div id="hero" class="p-img py-5 d-flex container-xxl align-items-center gap-4">
-        <div class="d-flex flex-column gap-5 w-text-sm">
+    <div id="hero" class="p-img py-5 d-flex container-xxl align-items-center _gap-4">
+        <div class="d-flex flex-column _gap-5 w-text-sm">
             <h1>Invest in Real Estate Like Buying Stocks</h1>
-            Traditional real estate investing can be hard. With PadShares, you get the benefits of cash flow,
-            appreciation, diversification and liquidity without the hard work. Get started now with as little as $100.
-            <div class="d-flex gap-2 email">
+            <p>
+                Traditional real estate investing can be hard. With PadShares, you get the benefits of cash flow,
+                appreciation, diversification and liquidity without the hard work. Get started now with as little as
+                $100.
+            </p>
+            <div class="d-flex _gap-2 email">
                 <input type="email" class="form-control p-2" id="inputEmail" aria-describedby="emailHelp"
                     placeholder="Enter Email">
                 <button type="button" class="btn grn">Get Started</button>
@@ -114,19 +116,19 @@
         </div>
 
 
-        <img class="flex-grow-1"  src="images/house1.svg" alt="House and Clouds" />
+        <img class="flex-grow-1" src="images/house1.svg" alt="House and Clouds" />
 
 
     </div>
 
     <div id="how-it-works" class="container-fluid py-5 px-0" style="background: #F5F6F6">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex p-reg-c justify-content-center">
             <h1 style="margin-bottom: 0.75em">How It Works</h1>
         </div>
 
         <div class="align-items-center p-img d-flex justify-content-between container-xxl">
-            <div class="d-flex flex-column gap-5">
-                <div class="d-flex gap-4 align-items-center">
+            <div class="d-flex flex-column _gap-5">
+                <div class="d-flex align-items-center">
                     <div class="d-flex justify-content-center align-items-center hiw__number__outer">
                         <div class="d-flex justify-content-center align-items-center hiw__number__inner">
                             <h4 style="color: white">1</h4>
@@ -136,7 +138,7 @@
                     <h5>Sign up and download the app</h5>
                 </div>
 
-                <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex align-items-center">
                     <div class="d-flex justify-content-center align-items-center hiw__number__outer">
                         <div class="d-flex justify-content-center align-items-center hiw__number__inner">
                             <h4 style="color: white">2</h4>
@@ -149,7 +151,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex align-items-center">
                     <div class="d-flex justify-content-center align-items-center hiw__number__outer">
                         <div class="d-flex justify-content-center align-items-center hiw__number__inner">
                             <h4 style="color: white">3</h4>
@@ -162,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex align-items-center">
                     <div class="d-flex justify-content-center align-items-center hiw__number__outer">
                         <div class="d-flex justify-content-center align-items-center hiw__number__inner">
                             <h4 style="color: white">4</h4>
@@ -176,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex align-items-center">
                     <div class="d-flex justify-content-center align-items-center hiw__number__outer">
                         <div class="d-flex justify-content-center align-items-center hiw__number__inner">
                             <h4 style="color: white">5</h4>
@@ -189,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex align-items-center">
                     <div class="d-flex justify-content-center align-items-center hiw__number__outer">
                         <div class="d-flex justify-content-center align-items-center hiw__number__inner">
                             <h4 style="color: white">6</h4>
@@ -203,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex _gap align-items-center">
                     <div class="d-flex justify-content-center align-items-center hiw__number__outer">
                         <div class="d-flex justify-content-center align-items-center hiw__number__inner">
                             <h4 style="color: white">7</h4>
@@ -221,18 +223,19 @@
 
             <div class="hiw__samples">
 
-                <img class="d-none d-sm-block"  data-src="images/samples.jpg" loading="lazy" alt="Samples of the Service">
+                <img class="d-none d-sm-block" data-src="images/samples.jpg" loading="lazy"
+                    alt="Samples of the Service">
 
             </div>
         </div>
     </div>
 
-    <div id="what-is-fre" class="container-xxl d-flex align-items-center gap-4 p-img-invert py-5">
+    <div id="what-is-fre" class="container-xxl d-flex align-items-center _gap-4 p-img-invert py-5">
 
-        <img class="flex-grow-1"  data-src="images/house2.svg" loading="lazy" alt="Real Estate">
+        <img class="flex-grow-1" data-src="images/house2.svg" loading="lazy" alt="Real Estate">
 
 
-        <div class="d-flex flex-column w-text-sm gap-4">
+        <div class="d-flex flex-column w-text-sm _gap-4">
             <h2 class="flex-grow-1">What is Fractional Real Estate?</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Sed et in consequat ante vitae nisl eget. Posuere condimentum
                 sollicitudin elit egestas eget. Blandit enim in libero vel pulvinar. Augue consequat urna enim vulputate
@@ -251,7 +254,7 @@
     </div>
 
 
-    <div id="why-re" class="d-flex flex-column p-reg-c py-5 justify-content-center align-items-center gap-4">
+    <div id="why-re" class="d-flex flex-column p-reg-c py-5 justify-content-center align-items-center _gap-4">
         <h2>Why Real Estate?</h2>
 
         <div class="text-center desc">
@@ -267,7 +270,7 @@
                 </div>
                 <div class="col text-center mt-auto header">
 
-                    <img  data-src="images/table1/real_estate.svg" loading="lazy" style="padding-left: 0.5rem"
+                    <img data-src="images/table1/real_estate.svg" loading="lazy" style="padding-left: 0.5rem"
                         alt="Real Estate">
 
 
@@ -275,21 +278,21 @@
                 </div>
                 <div class="col text-center mt-auto header">
 
-                    <img  data-src="images/table1/stocks.svg" loading="lazy" style="padding-right: 0.65rem" alt="Stocks">
+                    <img data-src="images/table1/stocks.svg" loading="lazy" style="padding-right: 0.65rem" alt="Stocks">
 
 
                     <p class="d-none d-sm-block">Stocks</p>
                 </div>
                 <div class="col text-center mt-auto header">
 
-                    <img  data-src="images/table1/bonds.svg" loading="lazy" style="padding-right: 1.2rem" alt="Bonds">
+                    <img data-src="images/table1/bonds.svg" loading="lazy" style="padding-right: 1.2rem" alt="Bonds">
 
 
                     <p class="d-none d-sm-block">Bonds</p>
                 </div>
                 <div class="col text-center mt-auto header">
 
-                    <img  data-src="images/table1/gold.svg" loading="lazy" style="padding-left: 0.55rem" alt="Gold">
+                    <img data-src="images/table1/gold.svg" loading="lazy" style="padding-left: 0.55rem" alt="Gold">
 
 
                     <p class="d-none d-sm-block">Gold</p>
@@ -302,25 +305,25 @@
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="Yes">
 
 
                 </div>
@@ -332,24 +335,24 @@
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="No">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="No">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
                 </div>
             </div>
@@ -360,25 +363,25 @@
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="No">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="No">
 
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="No">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="No">
 
                 </div>
             </div>
@@ -389,22 +392,22 @@
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="No">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="No">
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="No">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="No">
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
                 </div>
             </div>
@@ -415,22 +418,22 @@
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="No">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="No">
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/cross.svg" loading="lazy" alt="No">
+                    <img data-src="images/table1/cross.svg" loading="lazy" alt="No">
 
                 </div>
                 <div class="col d-flex justify-content-center align-self-center">
 
-                    <img  data-src="images/table1/check.svg" loading="lazy" alt="Yes">
+                    <img data-src="images/table1/check.svg" loading="lazy" alt="Yes">
 
                 </div>
             </div>
@@ -457,18 +460,10 @@
 
 
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center py-5 px-0">
-        <div id="portfolio" class="d-block d-sm-none mb-4 overflow-x-auto">
-
-            <img  data-src="images/cards-scroll.png" loading="lazy" alt="Samples Scroll">
-
-        </div>
-
-        <div id="portfolio" class="d-none d-sm-block mb-4 overflow-x-auto">
+        <div id="portfolio" class="mb-4 overflow-x-auto">
             <div class="shadow-lg card">
                 <div class="wrapper gradient">
-
-                    <img  data-src="images/cards/1.png" loading="lazy" alt="Real Estate Sample">
-
+                    <img data-src="images/cards/1.png" loading="lazy" alt="Real Estate Sample">
                 </div>
                 <div class="chip shadow-sm"></div>
                 <div class="mb-3" style="position: absolute; bottom: 0; left: 1rem; right: 1rem;">
@@ -476,7 +471,7 @@
                     <p style="font-size: 0.8em">Crestwood Estates, Texas TX126</p>
                     <p class="mt-2" style="font-size: 0.8em; color: rgb(199, 199, 199) !important">Single-Family
                         Residence | 147 investors</p>
-                    <div class="d-flex align-items-center gap-2 mt-2">
+                    <div class="d-flex align-items-center _gap-2 mt-2">
                         <div class="bar">
                             <div class="percent" style="width: 73%"></div>
                         </div>
@@ -488,7 +483,7 @@
             <div class="shadow-lg card">
                 <div class="wrapper gradient">
 
-                    <img  data-src="images/cards/2.png" loading="lazy" alt="Real Estate Sample">
+                    <img data-src="images/cards/2.png" loading="lazy" alt="Real Estate Sample">
 
                 </div>
                 <div class="chip shadow-sm"></div>
@@ -497,7 +492,7 @@
                     <p style="font-size: 0.8em">Harborview Heights, Florida FL309</p>
                     <p class="mt-2" style="font-size: 0.8em; color: rgb(199, 199, 199) !important">Beachfront Condo |
                         566 investors</p>
-                    <div class="d-flex align-items-center gap-2 mt-2">
+                    <div class="d-flex align-items-center _gap-2 mt-2">
                         <div class="bar">
                             <div class="percent" style="width: 95%"></div>
                         </div>
@@ -509,7 +504,7 @@
             <div class="shadow-lg card">
                 <div class="wrapper gradient">
 
-                    <img  data-src="images/cards/3.png" loading="lazy" alt="Real Estate Sample">
+                    <img data-src="images/cards/3.png" loading="lazy" alt="Real Estate Sample">
 
                 </div>
                 <div class="chip shadow-sm"></div>
@@ -518,7 +513,7 @@
                     <p style="font-size: 0.8em">Mountain Crest Village, Colorado CO214</p>
                     <p class="mt-2" style="font-size: 0.8em; color: rgb(199, 199, 199) !important">Mountain Cabin | 91
                         investors</p>
-                    <div class="d-flex align-items-center gap-2 mt-2">
+                    <div class="d-flex align-items-center _gap-2 mt-2">
                         <div class="bar">
                             <div class="percent" style="width: 45%"></div>
                         </div>
@@ -530,7 +525,7 @@
             <div class="shadow-lg card">
                 <div class="wrapper gradient">
 
-                    <img  data-src="images/cards/4.png" loading="lazy" alt="Real Estate Sample">
+                    <img data-src="images/cards/4.png" loading="lazy" alt="Real Estate Sample">
 
                 </div>
                 <div class="chip shadow-sm"></div>
@@ -539,7 +534,7 @@
                     <p style="font-size: 0.8em">Lakeside Terrace, Michigan MI502</p>
                     <p class="mt-2" style="font-size: 0.8em; color: rgb(199, 199, 199) !important">Lakeside Cottage |
                         218 investors</p>
-                    <div class="d-flex align-items-center gap-2 mt-2">
+                    <div class="d-flex align-items-center _gap-2 mt-2">
                         <div class="bar">
                             <div class="percent" style="width: 62%"></div>
                         </div>
@@ -556,7 +551,7 @@
 
     <div id="secondary-mkt" class="container-xxl d-flex align-items-center p-reg-e py-5">
         <div class="d-flex flex-grow-1 justify-content-center">
-            <div class="d-flex flex-column w-text-sm gap-4">
+            <div class="d-flex flex-column w-text-sm _gap-4">
                 <h2 class="flex-grow-1" style="width: 16rem">Secondary Marketplace</h2>
                 <p>Our secondary marketplace gives you the ability to liquidate your shares at a time that is right for
                     you. No more being stuck in long-term investments that give you little to no control over when or
@@ -571,18 +566,18 @@
 
         <div class="img-wrap">
 
-            <img class="pt-5 px-4" style="scale: 1.2"  data-src="images/showcase.png" loading="lazy" alt="Real Estate Sample">
+            <img class="pt-5 px-4" style="scale: 1.2" data-src="images/showcase.png" loading="lazy"
+                alt="Real Estate Sample">
 
         </div>
     </div>
 
-    <div id="democratize-rei" class="p-img-invert py-5 d-flex container-xxl align-items-center gap-4">
+    <div id="democratize-rei" class="p-img-invert py-5 d-flex container-xxl align-items-center _gap-4">
+        <img class="flex-grow-1" style="margin-right: 2em" data-src="images/city.jpg" loading="lazy" alt="City">
 
-        <img class="flex-grow-1" style="margin-right: 2em"  data-src="images/city.jpg" loading="lazy" alt="City">
 
-
-        <div class="d-flex flex-column w-text-lg gap-4">
-            <h2 class="d-flex flex-grow-1" style="width: 24rem">Democratize Real Estate Investing</h2>
+        <div class="d-flex flex-column w-text-lg type-b _gap-4">
+            <h2 class="d-flex flex-grow-1">Democratize Real Estate Investing</h2>
             <p>PadShares seeks to democratize real estate investing by lowering the threshold for getting started and/or
                 growing your existing portfolio. Let’s face it, past traditional methods of investing in real estate can
                 be hard for the vast majority of people.
@@ -603,11 +598,10 @@
         </div>
     </div>
 
-    <div id="faq" class="p-reg-c py-5 d-flex flex-column align-items-center gap-5">
+    <div id="faq" class="p-reg-c py-5 d-flex flex-column align-items-center _gap-5">
         <h2>FAQ</h2>
 
-        <diV class="d-flex flex-column justify-content-between p-clpse gap-3"
-            style="border-bottom: 2px solid lightgrey">
+        <diV class="d-flex flex-column justify-content-between p-clpse" style="border-bottom: 2px solid lightgrey">
             <div class="d-flex align-items-center">
                 <h4 class="flex-grow-1 pb-3">Who should use Padshare?</h4>
                 <button class="btn ico" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
@@ -620,8 +614,7 @@
                     and 2) real estate agents that want to represent their listing.</p>
             </div>
         </diV>
-        <diV class="d-flex flex-column justify-content-between p-clpse gap-3"
-            style="border-bottom: 2px solid lightgrey">
+        <diV class="d-flex flex-column justify-content-between p-clpse" style="border-bottom: 2px solid lightgrey">
             <div class="d-flex align-items-center">
                 <h4 class="flex-grow-1 pb-3">What does a proposal on Padshare include?</h4>
                 <button class="btn ico" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
@@ -634,8 +627,7 @@
                     Quisque quis ligula ut lectus tristique fermentum.</p>
             </div>
         </diV>
-        <diV class="d-flex flex-column justify-content-between p-clpse gap-3"
-            style="border-bottom: 2px solid lightgrey">
+        <diV class="d-flex flex-column justify-content-between p-clpse" style="border-bottom: 2px solid lightgrey">
             <div class="d-flex align-items-center">
                 <h4 class="flex-grow-1 pb-3">Why do agents love Padshare?</h4>
                 <button class="btn ico" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
@@ -648,8 +640,7 @@
                     Quisque quis ligula ut lectus tristique fermentum.</p>
             </div>
         </diV>
-        <diV class="d-flex flex-column justify-content-between p-clpse gap-3"
-            style="border-bottom: 2px solid lightgrey">
+        <diV class="d-flex flex-column justify-content-between p-clpse" style="border-bottom: 2px solid lightgrey">
             <div class="d-flex align-items-center">
                 <h4 class="flex-grow-1 pb-3">Can any agent join Padshare?</h4>
                 <button class="btn ico" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
@@ -662,20 +653,20 @@
                     Quisque quis ligula ut lectus tristique fermentum.</p>
             </div>
         </diV>
-        <button type="button" class="btn wht d-flex align-items-center gap-1">
+        <button type="button" class="btn wht d-flex align-items-center _gap-1">
             More FAQs
-            <img  data-src="images/icons/arrow.svg"></button>
+            <img src="images/icons/arrow.svg"></button>
     </div>
 
-    <div class="container-fluid p-reg-c py-5 gap-5">
-        <div class="d-flex flex-grow-1 sbab">
+    <div class="container-fluid p-reg-c py-5">
+        <div id="sbab" class="d-flex flex-grow-1">
             <div class="d-flex flex-column w-text-lg">
                 <h2 class="d-flex flex-grow-1">Stop being a beginner</h2>
                 <p>Be the first to know about the property launches, portfolio updates, and announcements by subscribing
                     to our newsletter.</p>
             </div>
 
-            <div id="email" class="d-flex flex-grow-1 align-self-center gap-2">
+            <div class="d-flex flex-grow-1 align-self-center _gap-2 email">
                 <input type="email" class="form-control p-3 flex-grow-1" id="inputEmail" aria-describedby="emailHelp"
                     placeholder="Enter Email">
                 <button type="button" class="btn grn">Get Started</button>
@@ -688,15 +679,15 @@
         border-top: 1px solid #B2B2B2;
         border-bottom: 1px solid #B2B2B2;">
         <div id="footer">
-            <div class="d-flex flex-column gap-1">
+            <div class="d-flex flex-column _gap-1">
                 <h3>Padshares</h3>
                 <p class="mt-4 __footer" style="width: 20rem;">
                     Lorem ipsum dolor sit amet, elit ut aliquam, purus sit amet luctus
                 </p>
-                <div class="d-flex gap-2 mt-2">
-                    <a href="https://facebook.com"><img  data-src="images/socials/fb.svg"></a>
-                    <a href="https://instagram.com"><img href="instagram.com"  data-src="images/socials/insta.svg"></a>
-                    <a href="https://x.com"><img href="x.com"  data-src="images/socials/twt.svg"></a>
+                <div class="d-flex _gap-2 mt-2">
+                    <a href="https://facebook.com"><img src="images/socials/fb.svg"></a>
+                    <a href="https://instagram.com"><img href="instagram.com" src="images/socials/insta.svg"></a>
+                    <a href="https://x.com"><img href="x.com" src="images/socials/twt.svg"></a>
                 </div>
             </div>
 
@@ -708,7 +699,7 @@
                     </p>
                 </a>
 
-                <a href="#" style="text-decoration: none">
+                <a href="#portfolio" style="text-decoration: none">
                     <p p class="__footer">
                         Browse Properties
                     </p>
@@ -723,13 +714,13 @@
 
             <div class="d-flex flex-column link-col">
                 <h5>LEARN</h5>
-                <a href="#" style="text-decoration: none">
+                <a href="#faq" style="text-decoration: none">
                     <p class="__footer">
                         Help & FAQ
                     </p>
                 </a>
 
-                <a href="#" style="text-decoration: none">
+                <a href="#how-it-works" style="text-decoration: none">
                     <p class="__footer">
                         How It Works
                     </p>
@@ -777,19 +768,19 @@
 
 
             <div class="d-flex flex-column link-col">
-                <div class="d-flex gap-3" style="width: 15rem">
-                    <img class="align-self-center mb-auto"  data-src="images/icons/pin.svg">
+                <div class="d-flex _gap-3" style="width: 15rem">
+                    <img class="align-self-center mb-auto" src="images/icons/pin.svg">
                     <p style="font-size: 0.875em">8502 Preston Rd. Inglewood, Maine 98380, USA</p>
                 </div>
-                <div class="d-flex gap-3">
-                    <img class="align-self-center"  data-src="images/icons/mail.svg">
+                <div class="d-flex _gap-3">
+                    <img class="align-self-center" src="images/icons/mail.svg">
                     <p style="font-size: 0.875em">support@padshare.com</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid p-reg-c py-5 gap-5">
+    <div class="container-fluid p-reg-c py-5 _gap-5">
         <p>
             Lorem ipsum dolor sit amet consectetur. Diam ligula non viverra mi nibh nam viverra phasellus vulputate.
             Tristique eget aliquet congue consectetur ullamcorper commodo mattis. Tortor nec ullamcorper vitae faucibus
@@ -830,10 +821,9 @@
         </p>
     </div>
 
-    <script  data-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script  data-src="dist/loading-attribute-polyfill.umd.js" async></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
