@@ -59,7 +59,6 @@ h5 {
 }
 
 
-
 p {
   margin: 0;
   color: #212121;
@@ -152,12 +151,29 @@ hr {
   padding: 0 !important;
 }
 
+@media screen and (min-width: 992px){
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 2em;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+}
+
 .form-control {
   border-radius: 6px;
 }
 
 .navbar ._gap {
     margin-right: 3rem;
+}
+
+.fixed-top {
+  margin: 0;
+  padding: 0 !important;
 }
 
 .nav-divider {
@@ -229,6 +245,11 @@ hr {
   margin: 0;
   padding: 0.3em 0 !important;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #808080;
+}
+.nav-link:hover{
+  color: back;
 }
 
 .navbar-wrap {
@@ -245,7 +266,6 @@ hr {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 2.5rem;
-  padding: 0 1.5rem 0 3rem;
 }
 @media screen and (max-width: 992px) {
   .navbar-wrap .inner {
@@ -386,6 +406,7 @@ hr {
 
 .p-header {
   padding: 1.4em 8.275rem;
+  transition: 150ms ease-in;
 }
 @media screen and (max-width: 1400px) {
   .p-header {
@@ -399,8 +420,12 @@ hr {
 }
 @media screen and (max-width: 768px) {
   .p-header {
-    padding: 0.7em 2.5rem;
+    padding: 1em 2.5rem;
   }
+}
+
+.bot-border {
+  border-bottom: solid 1px #e6e6e6;
 }
 
 .w-text-sm {
@@ -511,8 +536,14 @@ hr {
   }
 }
 
+#hero {
+  margin-top: 70px;
+  height: 100vh;
+  overflow: hidden;
+}
+
 #how-it-works ._gap {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 #portfolio {
@@ -710,7 +741,6 @@ hr {
   }
 }
 @media screen and (max-width: 576px) {
-    
   #why-re .header img {
     -webkit-transform: scale(0.7, 0.7);
     margin: 0 -0.5rem -1rem -0.05rem;
