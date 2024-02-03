@@ -65,6 +65,10 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.p-sm {
+  font-size: 0.85em;
+}
+
 p.__footer {
   color: #636262;
   font-size: 0.875em;
@@ -136,15 +140,15 @@ hr {
 }
 
 .ico::before {
-  content: url(images/icons/plus.png);
+  content: url(images/icons/plus.svg);
 }
 
 .ico.collapsed::before {
-  content: url(images/icons/plus.png);
+  content: url(images/icons/plus.svg);
 }
 
 .ico.exp::before {
-  content: url(images/icons/minus.png);
+  content: url(images/icons/minus.svg);
 }
 
 .col {
@@ -229,7 +233,7 @@ hr {
 }
 
 .hiw__samples img {
-  border-radius: 6px;
+  border-radius: 2rem 0 0 2rem;
   width: auto;
   height: 100%;
   -o-object-fit: contain;
@@ -265,14 +269,13 @@ hr {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 2.5rem;
 }
+
 @media screen and (max-width: 992px) {
   .navbar-wrap .inner {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    gap: 0.6rem;
     padding: 0 2rem;
   }
 }
@@ -537,7 +540,7 @@ hr {
 }
 
 #hero {
-  margin-top: 70px;
+  padding-top: 70px;
   height: 100vh;
   overflow: hidden;
 }
@@ -552,9 +555,8 @@ hr {
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 1.5rem;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   #portfolio {
     > :first-child {
         margin-left: 2rem !important;
@@ -568,7 +570,7 @@ hr {
   }
 }
 
-#portfolio .card {
+#portfolio .re-card {
   display: inline-block;
   position: relative;
   -webkit-box-pack: center;
@@ -584,16 +586,32 @@ hr {
   width: 270px;
   height: 300px;
   overflow: hidden;
+  box-shadow: 0 0 0;
+}
+@media screen and (max-width:1400px){
+  #portfolio .re-card {
+      margin: 0 1rem;
+  }
+}
+@media screen and (max-width:992px){
+  #portfolio .re-card {
+      margin: 0 0.75rem;
+  }
 }
 @media screen and (max-width:576px){
-    #portfolio .card {
+    #portfolio .re-card {
         margin: 0 0.5rem;
     }
 }
-#portfolio .card p {
+#portfolio .re-card p {
   color: white !important;
 }
-#portfolio .card .bar {
+#portfolio .re-card:hover {
+  box-shadow: 0 0.5em 1em grey;
+  transition: 120ms;
+  transition-timing-function: ease-in-and-out;
+}
+#portfolio .re-card .bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,14 +622,14 @@ hr {
   height: 6px;
   border-radius: 4px;
 }
-#portfolio .card .bar .percent {
+#portfolio .re-card .bar .percent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #a7ca37;
   border-radius: inherit;
 }
-#portfolio .card .wrapper {
+#portfolio .re-card .wrapper {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-box-align: center;
@@ -632,7 +650,7 @@ hr {
   height: 100%;
   overflow: hidden;
 }
-#portfolio .card .wrapper:hover {
+#portfolio .re-card .wrapper:hover {
   -webkit-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
@@ -641,7 +659,7 @@ hr {
   transition: 225ms;
   -webkit-transform: scale(1.1, 1.1);
 }
-#portfolio .card .wrapper::after {
+#portfolio .re-card .wrapper::after {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -660,14 +678,14 @@ hr {
   content: "";
 }
 
-#portfolio .card img {
+#portfolio .re-card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-#portfolio .card .chip {
+#portfolio .re-card .chip {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -678,7 +696,7 @@ hr {
   font-size: 0.75em;
 }
 
-#portfolio .card .chip::before {
+#portfolio .re-card .chip::before {
   content: "New";
 }
 
@@ -687,7 +705,7 @@ hr {
     -webkit-box-flex: 1;
     background-color: #f1f1f1;
     border-radius: 0.75em;
-    border: 1px solid #b2b2b2;
+    border: 1px solid lightgrey;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -735,6 +753,20 @@ hr {
 #why-re .desc {
   width: 50em;
 }
+
+#why-re .container {
+  max-width: 992px;
+}
+
+#why-re .container p {
+  @media screen and (max-width: 1400px) {
+    font-size: 0.9em;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 0.85em;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #why-re .desc {
     width: 100%;
